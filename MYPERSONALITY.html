@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Identity & Personality — English lesson</title>
+<style>
+:root{--ink:#292522;--muted:#746d68;--pink:#e88eb2;--pink2:#f7e6ed;--cream:#fbf7f1;--paper:#fffdf9;--green:#79965b;--line:#e9dfd7;--blue:#415d83}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eee7df;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+.page{max-width:1120px;margin:28px auto;background:var(--cream);box-shadow:0 18px 60px #44372a18;overflow:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.brand{font-weight:800;color:var(--blue)}nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+.hero{padding:58px 7% 46px;position:relative;min-height:360px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#b36b8a;font-weight:bold}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-.045em;font-weight:500;margin:18px 0}
+.hero p{max-width:470px;color:var(--muted);font-size:16px}
+.hero-img{width:100%;height:280px;object-fit:cover;border-radius:2px 70px 2px 2px}
+.sticker{position:absolute;right:41%;bottom:37px;background:var(--pink2);padding:9px 18px;transform:rotate(-7deg);font-family:Georgia,serif;font-size:20px}
+.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+section{padding:52px 7%;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:26px}
+.kicker{font-size:11px;color:#b36b8a;letter-spacing:.18em;text-transform:uppercase;font-weight:bold}
+h2{font:500 clamp(30px,4vw,44px)/1.1 Georgia,serif;margin:7px 0}
+h3{font-size:17px;margin:0 0 12px}
+.lead{color:var(--muted);max-width:560px;margin:0}
+.exercise{background:var(--paper);border:1px solid var(--line);padding:25px;margin:20px 0;border-radius:3px}
+.exercise-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+.tag{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--green);font-weight:bold}
+.question{padding:13px 0;border-top:1px solid #f0eae4}
+.question:first-of-type{border-top:0}
+.qtext{margin-bottom:8px}
+.options{display:flex;flex-wrap:wrap;gap:8px}
+label.opt{display:inline-flex;align-items:center;gap:6px;background:#f7f2ec;padding:7px 11px;border-radius:2px;font-size:14px;cursor:pointer}
+input[type=radio],input[type=checkbox]{accent-color:var(--pink)}
+input[type=text],select{border:1px solid #d9cec4;background:white;padding:9px 10px;font:inherit;font-size:14px;border-radius:2px;max-width:100%}
+input.blank{width:min(280px,100%);margin:3px 4px}
+.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+button{border:0;background:var(--ink);color:white;padding:11px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+button.secondary{background:var(--pink2);color:#7f4d63}
+button:hover{opacity:.86}
+.feedback{font-size:13px;color:var(--muted);min-height:20px}
+.correct{color:#4d7b45;font-weight:bold}.wrong{color:#b65d72;font-weight:bold}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;margin:22px 0}
+.collage img{width:100%;max-height:300px;object-fit:cover}
+.collage .note{padding:20px 26px;background:#f5e7ed}
+.collage .note p{margin:7px 0;color:var(--muted)}
+.rule-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
+.rule-cards img{width:100%;height:auto;display:block;border-radius:4px}
+.rule-note{background:#f2f4e9;padding:18px 20px;margin:15px 0;font-size:14px}
+.rule-note strong{color:#557b34}
+.audio-card{background:#f4e7ed;padding:22px;margin:20px 0;display:flex;gap:18px;align-items:center}
+.audio-card img{width:100px;height:100px;object-fit:cover;border-radius:50%}
+audio{width:100%;margin-top:8px}
+.listening-list{list-style:none;padding:0;margin:0}
+.listening-list li{padding:12px 0;border-bottom:1px solid var(--line)}
+.listening-list select{margin-left:8px;min-width:70px}
+.listening-list input{width:min(330px,100%)}
+.decor{display:grid;grid-template-columns:120px 1fr 130px;gap:18px;align-items:center;margin:10px 0 25px}
+.decor img{width:100%;height:115px;object-fit:cover}
+.decor p{font:italic 19px Georgia,serif;color:#8b7771}
+.final{background:#f5e4eb;text-align:center;padding:55px 7% 62px}
+.final img{width:min(220px,60%);max-height:260px;object-fit:contain;object-position:center}
+.final h2{font-size:clamp(36px,5vw,58px);color:#b85e84}
+.small{font-size:12px;color:var(--muted)}
+details{background:#f8f2ec;padding:12px 15px;margin-top:14px}
+summary{cursor:pointer;font-size:13px;font-weight:bold}
+footer{text-align:center;padding:22px;color:#8d827a;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:700px){.page{margin:0}.hero{grid-template-columns:1fr;padding-top:38px}.hero-img{height:220px}.sticker{right:8%;bottom:20px}.section-head{display:block}.collage,.rule-cards{grid-template-columns:1fr}.decor{grid-template-columns:75px 1fr 75px}.decor img{height:85px}.exercise{padding:17px}nav{padding:16px 5%}nav a{margin-left:9px}}
+</style>
+</head>
+<body><main class="page">
+<nav><div class="brand">STUDY CLUB / ENGLISH</div><div><a href="#vocab">Vocabulary</a><a href="#grammar">Grammar</a><a href="#listening">Listening</a></div></nav>
+<header class="hero">
+<div><div class="eyebrow">B2 · workbook practice · unit 1</div><h1>Identity &<br><i>personality</i></h1>
+<p>A little vocabulary, a grammar refresh and a listening challenge. Take your time, trust your instincts and check your progress as you go.</p>
+<div class="meta"><span>✳ 3 sections</span><span>✳ 6 exercises</span><span>✳ Self-check</span></div></div>
+<img class="hero-img" src="assets/girl-flowers.png" alt="A person holding a bouquet of flowers">
+<div class="sticker">a lesson to bloom in ✿</div>
+</header>
+
+<section id="vocab">
+<div class="section-head"><div><div class="kicker">01 / vocabulary</div><h2>Personality adjectives</h2><p class="lead">Choose the adjective that best completes each sentence. Then use the word bank to complete the conversation.</p></div></div>
+<div class="decor"><img src="assets/pink-flower.jpg" alt="Pale pink flower"><p>“Be yourself; everyone else is already taken.”</p><img src="assets/books.jpg" alt="A stack of books"></div>
+<div class="exercise" id="ex1a"><div class="exercise-top"><h3>1A · Choose the correct word</h3><span class="tag">6 questions</span></div><div id="mc1"></div><div class="actions"><button onclick="checkMC('mc1',key1)">Check answers</button><button class="secondary" onclick="resetMC('mc1')">Try again</button><span class="feedback" id="fb-mc1"></span></div></div>
+<div class="exercise" id="ex1b"><div class="exercise-top"><h3>1B · Complete the conversation</h3><span class="tag">8 gaps</span></div>
+<p class="small">Word bank: adventurous · ambitious · argumentative · cheerful · curious · outgoing · rebellious · stubborn</p><div id="fill1"></div><div class="actions"><button onclick="checkFill('fill1',keyFill1)">Check answers</button><button class="secondary" onclick="resetFill('fill1')">Clear</button><span class="feedback" id="fb-fill1"></span></div></div>
+</section>
+
+<section id="grammar">
+<div class="section-head"><div><div class="kicker">02 / grammar</div><h2>Present perfect</h2><p class="lead">A quick visual reminder before you dive into the exercises.</p></div><img src="assets/coffee.jpg" alt="A cup of coffee" style="width:112px;height:112px;object-fit:cover;border-radius:50%"></div>
+<div class="rule-cards"><img src="assets/grammar-perfect.jpg" alt="Present perfect rule card"><img src="assets/grammar-continuous.jpg" alt="Present perfect continuous rule card"></div>
+<div class="rule-note"><strong>Present perfect simple:</strong> have / has + past participle (V3). Use it for experiences, completed actions with a present result, and situations where the result matters.<br><strong>Present perfect continuous:</strong> have / has + been + verb-ing. Use it for an activity that started in the past and continues now, or has a visible present result. Focus on duration or activity.</div>
+<div class="exercise" id="ex3a"><div class="exercise-top"><h3>3A · Choose the correct form</h3><span class="tag">6 questions</span></div><div id="mc3"></div><div class="actions"><button onclick="checkMC('mc3',key3)">Check answers</button><button class="secondary" onclick="resetMC('mc3')">Try again</button><span class="feedback" id="fb-mc3"></span></div></div>
+<div class="collage"><div class="note"><div class="kicker">Grammar in real life</div><h3>Progress is a process.</h3><p>Some things are finished; others have been happening for a while. Notice the difference in meaning.</p></div><img src="assets/blue-flower.jpg" alt="Blue flower"></div>
+<div class="exercise" id="ex3b"><div class="exercise-top"><h3>3B · Complete the blog post</h3><span class="tag">6 gaps</span></div>
+<p class="small">Use the correct form of the verbs in brackets.</p>
+<div id="blog"><p>Regular followers of my blog will know that I <input class="blank" data-answer="have always been" placeholder="(be) a shy, quiet person">, who hates conflict and walks away from any kind of argument.</p>
+<p>Recently, though, I <input class="blank" data-answer="have been working" placeholder="(work) on being more assertive, by which I mean being stronger and more confident.</p>
+<p>I <input class="blank" data-answer="have had" placeholder="(have) three sessions with a life coach, who <input class="blank" data-answer="has helped" placeholder="(help) me to finally understand that being assertive is not the same as being aggressive.</p>
+<p>Recently, I <input class="blank" data-answer="have been practising" placeholder="(practise) the things we've talked about and it <input class="blank" data-answer="has been" placeholder="(be) a real eye-opener!</p></div>
+<div class="actions"><button onclick="checkBlog()">Check answers</button><button class="secondary" onclick="resetBlog()">Clear</button><span class="feedback" id="fb-blog"></span></div>
+</div>
+</section>
+
+<section id="listening">
+<div class="section-head"><div><div class="kicker">03 / listening</div><h2>What makes you, you?</h2><p class="lead">Listen to the interview about identity. You can pause, replay and listen again as many times as you need.</p></div></div>
+<div class="audio-card"><img src="assets/laptop-cat.jpg" alt="A cat at a laptop"><div style="flex:1"><strong>Audio 1.02 · Interview about identity</strong><div class="small">Approx. 3 min 12 sec · MP3</div><audio controls preload="metadata"><source src="assets/identity-interview.mp3" type="audio/mpeg">Your browser does not support audio playback.</audio></div></div>
+<div class="exercise"><div class="exercise-top"><h3>5A · Put the topics in order</h3><span class="tag">5 topics</span></div><p class="small">Listen and number the topics in the order they are discussed.</p>
+<ol class="listening-list" id="orderList">
+<li>Other factors that influence our identity <select aria-label="Order for topic a"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></li>
+<li>How to find yourself <select aria-label="Order for topic b"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></li>
+<li>The elements that form our identity <select aria-label="Order for topic c"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></li>
+<li>How we develop our sense of self <select aria-label="Order for topic d"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></li>
+<li>The importance of self-identity <select aria-label="Order for topic e"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></li>
+</ol><div class="actions"><button onclick="checkOrder()">Check numbering</button><button class="secondary" onclick="clearOrder()">Reset</button><span class="feedback" id="fb-order"></span></div>
+<p class="small">Self-check: make sure you have used each number from 1 to 5 exactly once. Replay the interview to verify the sequence.</p></div>
+<div class="exercise"><div class="exercise-top"><h3>5B · Complete the sentences</h3><span class="tag">5 gaps</span></div><p class="small">Write no more than three words from the recording in each gap.</p>
+<div id="listenFill">
+<p>1. Identity is a combination of your <input class="blank" placeholder="your answer">, your likes and dislikes, your moral code and what motivates you.</p>
+<p>2. Without a clear sense of self, it can be difficult to <input class="blank" placeholder="your answer">.</p>
+<p>3. Parents provide <input class="blank" placeholder="your answer"> for how their children should behave.</p>
+<p>4. Your identity isn't <input class="blank" placeholder="your answer"> — it develops over the course of your life.</p>
+<p>5. Our relationships and experiences <input class="blank" placeholder="your answer"> our sense of self.</p>
+</div>
+<div class="actions"><button onclick="saveListening()">Check completion</button><button class="secondary" onclick="clearListening()">Clear</button><span class="feedback" id="fb-listen"></span></div>
+<details><summary>Listening strategy</summary><p class="small">First listen for the general idea. On the second listen, focus on the words immediately before and after each gap. Keep your answers short and use the speaker's exact wording.</p></details>
+</div>
+<div class="exercise"><div class="exercise-top"><h3>5C · Final advice</h3><span class="tag">Your own words</span></div><p>Listen to the speaker's final advice again and write the sentence you hear.</p><textarea id="finalAdvice" rows="3" style="width:100%;padding:12px;border:1px solid var(--line);font:inherit" placeholder="Write the sentence here..."></textarea><p class="small">Replay the final part of the recording and compare your sentence with what you hear.</p></div>
+</section>
+<div class="final"><img src="assets/michael-scott.png" alt="A cheerful man pointing at the viewer"><h2>good work!<br><i>keep going!</i></h2><p>You showed up, practised and made progress. That's what counts.</p><img src="assets/studying-cat.png" alt="A focused cat studying" style="width:125px;max-height:125px"></div>
+<footer>made with care · keep learning, keep blooming</footer>
+</main>
+<script>
+const key1=[1,0,1,2,1,2];
+const qs1=[
+["He’s so ____! He’s planning to open two new restaurants by the end of the year.",["adventurous","ambitious","hopeful"]],
+["Hilda is the most ____ person I know. She seems to disagree with everything I say.",["argumentative","rebellious","stubborn"]],
+["People often go through a ____ stage of life, where they want to break rules.",["rebellious","curious","stubborn"]],
+["I think I’m pretty ____. I’ve climbed a mountain, trekked through the Amazon – that kind of thing.",["outgoing","stubborn","adventurous"]],
+["My sister’s very ____. Once she’s made her mind up, she won’t change it.",["outgoing","stubborn","argumentative"]],
+["My twin brother and I are completely different. I’m quite shy, whereas he’s very ____.",["rebellious","ambitious","outgoing"]]
+];
+const key3=[1,0,2,0,2,0];
+const qs3=[
+["I’ve ____ the doctor’s all morning, but no one’s answering.",["called","been calling","’m calling"]],
+["Have you ____ your hair cut? It’s looks great!",["had","having","been having"]],
+["Felix has ____ lessons recently and is making great progress so far.",["been","had","been having"]],
+["How many times have you ____ Canada?",["visited","been visiting","been"]],
+["I’ve ____ Japanese for just over a year now.",["studied","study","been studying"]],
+["She’s ____ €1,000 for charity.",["raised","been raising","raising"]]
+];
+function renderMC(id,items){document.getElementById(id).innerHTML=items.map((q,i)=>`<div class="question"><div class="qtext"><b>${i+1}.</b> ${q[0]}</div><div class="options">${q[1].map((v,j)=>`<label class="opt"><input type="radio" name="${id}-${i}" value="${j}"> ${String.fromCharCode(97+j)}. ${v}</label>`).join("")}</div></div>`).join("")}
+renderMC("mc1",qs1);renderMC("mc3",qs3);
+function checkMC(id,key){let score=0;key.forEach((v,i)=>{let a=document.querySelector(`input[name="${id}-${i}"]:checked`);if(a&&+a.value===v)score++});let f=document.getElementById("fb-"+id);f.innerHTML=`<b>${score}/${key.length}</b> correct${score===key.length?' — excellent!':''}`;f.className="feedback "+(score===key.length?"correct":"wrong")}
+function resetMC(id){document.querySelectorAll(`#${id} input`).forEach(x=>x.checked=false);document.getElementById("fb-"+id).textContent=""}
+const conv=[
+"Usually, my brother can be a bit <input class='blank' data-answer='argumentative'>. Whatever my opinion is, he’ll almost always tell me I’m wrong.",
+"He’s quite <input class='blank' data-answer='rebellious'>, too. He never follows rules and sometimes gets in trouble at school.",
+"Oh, dear! Your sister’s always very <input class='blank' data-answer='cheerful'>. She seems to enjoy life.",
+"Yeah, she does. She’s quite <input class='blank' data-answer='outgoing'> and has got loads of friends.",
+"He’s working now. He’s quite <input class='blank' data-answer='ambitious'>. Like, he’s already going for a promotion.",
+"He sounds quite <input class='blank' data-answer='adventurous'>, as well. Doesn’t he go mountain climbing?",
+"Yeah, he’s very <input class='blank' data-answer='curious'> about the world – wants to know everything and try everything.",
+"Oh, he isn’t perfect. He can be very <input class='blank' data-answer='stubborn'> and won’t change his mind for anything!"
+];
+document.getElementById("fill1").innerHTML=conv.map((x,i)=>`<div class="question"><b>${i+1}.</b> ${x}</div>`).join("");
+const keyFill1=["argumentative","rebellious","cheerful","outgoing","ambitious","adventurous","curious","stubborn"];
+function norm(s){return s.toLowerCase().trim().replace(/[’']/g,"'").replace(/[.!?,]/g,"").replace(/\s+/g," ")}
+function checkFill(id,key){let ins=[...document.querySelectorAll(`#${id} input`)],n=0;ins.forEach((x,i)=>{x.style.borderColor=norm(x.value)===key[i]?"#79a66b":"#d98ba6";if(norm(x.value)===key[i])n++});let f=document.getElementById("fb-"+id);f.textContent=`${n}/${key.length} correct`;f.className="feedback "+(n===key.length?"correct":"wrong")}
+function resetFill(id){document.querySelectorAll(`#${id} input`).forEach(x=>{x.value="";x.style.borderColor=""});document.getElementById("fb-"+id).textContent=""}
+function checkBlog(){let a=[...document.querySelectorAll("#blog input")],n=0;a.forEach(x=>{let ok=norm(x.value)===norm(x.dataset.answer);x.style.borderColor=ok?"#79a66b":"#d98ba6";if(ok)n++});let f=document.getElementById("fb-blog");f.textContent=`${n}/${a.length} correct`;f.className="feedback "+(n===a.length?"correct":"wrong")}
+function resetBlog(){document.querySelectorAll("#blog input").forEach(x=>{x.value="";x.style.borderColor=""});document.getElementById("fb-blog").textContent=""}
+function checkOrder(){let v=[...document.querySelectorAll("#orderList select")].map(x=>x.value),unique=new Set(v.filter(Boolean));let f=document.getElementById("fb-order");f.textContent=v.every(Boolean)&&unique.size===5?"All five numbers are used once. Now verify the order against the audio.":"Please use each number from 1 to 5 exactly once.";f.className="feedback"}
+function clearOrder(){document.querySelectorAll("#orderList select").forEach(x=>x.value="");document.getElementById("fb-order").textContent=""}
+function saveListening(){let a=[...document.querySelectorAll("#listenFill input")],n=a.filter(x=>x.value.trim()).length;let f=document.getElementById("fb-listen");f.textContent=`${n}/5 gaps completed. Replay the audio and check that your wording matches the recording.`;f.className="feedback"}
+function clearListening(){document.querySelectorAll("#listenFill input").forEach(x=>x.value="");document.getElementById("fb-listen").textContent=""}
+</script>
+</body></html>
